@@ -222,7 +222,7 @@ const Layout = ({ children, isHomePage } = {}) => (
             </a>
             {/* react-text: 119 */}
             {/* /react-text */}
-            <img src='icons/paw.svg' alt='Purrrrr' />
+            <img src='../static/icons/paw.svg' alt='Purrrrr' />
           </div>
         </div>
         <div className='Footer-secondary'>
