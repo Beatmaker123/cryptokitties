@@ -11,7 +11,7 @@ const Marketplace = (props) => (
         <BrowseSearchBar />
       </div>
       <div className='BrowseFilterBar'>
-        <Filter />
+        <Filter url={props.url} />
       </div>
       <div className='KittiesGallery'>
         <div className='Container Container--lg'>

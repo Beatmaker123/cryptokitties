@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Link from 'next/link'
 
-const Filter = () => (
+const Filter = ({ url: { query: { title } } } = {}) => (
   <Fragment>
     <div className='Filter'>
       <div className='Filter-container'>
@@ -15,10 +15,30 @@ const Filter = () => (
         </div>
         <div className='Filter-sortBy'>Sort by</div>
         <div className='Filter-tabs'>
-          <Link href='./marketplace'><span className='Filter-tab Filter-tab--active'>For Sale</span></Link>
-          <Link href='./marketplace?title=Siring'><span className='Filter-tab'>Siring</span></Link>
-          <Link href='./marketplace?title=Gen-0'><span className='Filter-tab'>Gen 0</span></Link>
-          <Link href='./marketplace?title=all'><span className='Filter-tab'>All Kitties</span></Link>
+          <Link href='./marketplace'>
+            <span className='Filter-tab Filter-tab--active'>For Sale</span>
+          </Link>
+          <Link href='./marketplace?title=Siring'>
+            <span
+              className={`Filter-tab ${title === 'Siring' ? 'Filter-tab--active' : ''}`}
+            >
+              {props.url.query.title}
+            </span>
+          </Link>
+          <Link href='./marketplace?title=Gen-0'>
+            <span
+              className={`Filter-tab ${title === 'Gen-0' ? 'Filter-tab--active' : ''}`}
+            >
+              {props.url.query.title}
+            </span>
+          </Link>
+          <Link href='./marketplace?title=all'>
+            <span
+              className={`Filter-tab ${title === 'all' ? 'Filter-tab--active' : ''}`}
+            >
+              {' '}{props.url.query.title}
+            </span>
+          </Link>
         </div>
       </div>
     </div>
