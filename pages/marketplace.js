@@ -4,7 +4,7 @@ import Filter from '../components/Filter'
 import KittiesItem from '../components/KittiesItem'
 import Pagination from '../components/Pagination'
 
-const Marketplace = () => (
+const Marketplace = (props) => (
   <Layout>
     <div className='BrowsePage'>
       <div className='BrowseSearchBar'>

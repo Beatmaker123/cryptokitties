@@ -16,7 +16,7 @@ const Filter = () => (
         <div className='Filter-sortBy'>Sort by</div>
         <div className='Filter-tabs'>
           <Link href='./marketplace'><span className='Filter-tab Filter-tab--active'>For Sale</span></Link>
-          <Link href='./marketplace?title=Siring'><span className='Filter-tab'>{props.url.query.title}</span></Link>
+          <Link href='./marketplace?title=Siring'><span className='Filter-tab'>Siring</span></Link>
           <Link href='./marketplace?title=Gen-0'><span className='Filter-tab'>Gen 0</span></Link>
           <Link href='./marketplace?title=all'><span className='Filter-tab'>All Kitties</span></Link>
         </div>
