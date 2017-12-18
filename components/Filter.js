@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Link from 'next/link'
 
-const Filter = ({ url: { query: { title } } } = {}) => (
+const Filter = ({ url: { query: { title = 'marketplace' } } } = {}) => (
   <Fragment>
     <div className='Filter'>
       <div className='Filter-container'>
@@ -15,28 +15,28 @@ const Filter = ({ url: { query: { title } } } = {}) => (
         </div>
         <div className='Filter-sortBy'>Sort by</div>
         <div className='Filter-tabs'>
-          <Link href='./marketplace?title=marketplace'>
+          <Link as={`/marketplace`} href='/marketplace'>
             <span
               className={`Filter-tab ${title === 'marketplace' ? 'Filter-tab--active' : ''}`}
             >
               Marketplace
             </span>
           </Link>
-          <Link href='./marketplace?title=Siring'>
+          <Link as={`/marketplace/Siring`} href='/marketplace?title=Siring'>
             <span
               className={`Filter-tab ${title === 'Siring' ? 'Filter-tab--active' : ''}`}
             >
               Siring
             </span>
           </Link>
-          <Link href='./marketplace?title=Gen-0'>
+          <Link as={`/marketplace/Gen0`} href='/marketplace?title=Gen0'>
             <span
-              className={`Filter-tab ${title === 'Gen-0' ? 'Filter-tab--active' : ''}`}
+              className={`Filter-tab ${title === 'Gen0' ? 'Filter-tab--active' : ''}`}
             >
               Gen 0
             </span>
           </Link>
-          <Link href='./marketplace?title=all'>
+          <Link as={`/marketplace/All`} href='/marketplace?title=all'>
             <span
               className={`Filter-tab ${title === 'all' ? 'Filter-tab--active' : ''}`}
             >

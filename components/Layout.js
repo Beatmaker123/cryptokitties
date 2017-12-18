@@ -252,12 +252,10 @@ const Layout = ({ children, isHomePage } = {}) => (
       <img
         className='FloatingSupportLink-icon FloatingSupportLink-icon--message'
         src='../static/icons/icon-message.svg'
-        alt
       />
       <img
         className='FloatingSupportLink-icon FloatingSupportLink-icon--plane'
         src='../static/icons/icon-discord-white.svg'
-        alt
       />
       <div className='FloatingSupportLink-text'>
         <span>

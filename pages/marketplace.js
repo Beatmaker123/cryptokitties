@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
 import BrowseSearchBar from '../components/BrowseSearchBar'
 import Filter from '../components/Filter'
-import KittiesItem from '../components/KittiesItem'
+import MarketplaceItem from '../components/MarketplaceItem'
 import Pagination from '../components/Pagination'
 
 const Marketplace = (props) => (
@@ -16,7 +16,7 @@ const Marketplace = (props) => (
       <div className='KittiesGallery'>
         <div className='Container Container--lg'>
           <div className='KittiesGrid'>
-            <KittiesItem />
+            <MarketplaceItem  />
           </div>
         </div>
       </div>
