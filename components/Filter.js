@@ -15,28 +15,32 @@ const Filter = ({ url: { query: { title } } } = {}) => (
         </div>
         <div className='Filter-sortBy'>Sort by</div>
         <div className='Filter-tabs'>
-          <Link href='./marketplace'>
-            <span className='Filter-tab Filter-tab--active'>For Sale</span>
+          <Link href='./marketplace?title=marketplace'>
+            <span
+              className={`Filter-tab ${title === 'marketplace' ? 'Filter-tab--active' : ''}`}
+            >
+              Marketplace
+            </span>
           </Link>
           <Link href='./marketplace?title=Siring'>
             <span
               className={`Filter-tab ${title === 'Siring' ? 'Filter-tab--active' : ''}`}
             >
-              {props.url.query.title}
+              Siring
             </span>
           </Link>
           <Link href='./marketplace?title=Gen-0'>
             <span
               className={`Filter-tab ${title === 'Gen-0' ? 'Filter-tab--active' : ''}`}
             >
-              {props.url.query.title}
+              Gen 0
             </span>
           </Link>
           <Link href='./marketplace?title=all'>
             <span
               className={`Filter-tab ${title === 'all' ? 'Filter-tab--active' : ''}`}
             >
-              {' '}{props.url.query.title}
+              All
             </span>
           </Link>
         </div>
