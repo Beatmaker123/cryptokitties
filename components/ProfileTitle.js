@@ -27,7 +27,7 @@ const ProfileTitle = (props) => (
             {/* react-text: 98 */}Brisk Cooldown
             {/* /react-text */}
             <img
-              src='icons/info.svg'
+              src='../static/icons/info.svg'
               className='KittyHeader-details-conditionInfo'
             />
           </span>
@@ -40,7 +40,7 @@ const ProfileTitle = (props) => (
           href='/profile/0x3fe6c312ac434c8d563ca99fcf66d630b7fe120d'
         >
           <div className='KittyHeader-owner-image'>
-            <img src='images/profile.png' />
+            <img src='../static/images/profile.png' />
           </div>
         </a>
         <span className='KittyHeader-owner-details'>

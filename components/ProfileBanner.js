@@ -3,7 +3,7 @@ import React from 'react'
 const ProfileBanner = () => (
   <div className='Container Container--full'>
     <div className='KittyBanner-container'>
-      <a className='active' aria-current='true' href='/kitty/258666'>
+      <a className='active' aria-current='true'>
         <img
           className='KittyBanner-image'
           src='https://storage.googleapis.com/ck-kitty-image/0x06012c8cf97bead5deae237070f9587f8e7a266d/258666.svg'
@@ -16,7 +16,7 @@ const ProfileBanner = () => (
       <div className='KittyBanner-share'>
         <img
           className='KittyBanner-shareBtn'
-          src='icons/share.svg'
+          src='../static/icons/share.svg'
           alt='Share me!'
           role='button'
         />

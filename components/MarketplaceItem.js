@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react'
 import Link from 'next/link'
 
-const MarketplaceItem = ({id = '288755'}) => (
+const MarketplaceItem = ({ id = '288755' }) => (
   <Fragment>
     <div className='KittiesGrid-item'>
-      <Link as={`/kitty/${id}`} href='/kittyProfile?id=${id'>
+      <Link as={`/kitty/${id}`} href='/kittyProfile'>
         <a aria-current='false'>
           <div className='KittyCard-wrapper'>
             <div className='KittyCard u-bg-alt-topaz KittyCard--responsive'>

@@ -4,7 +4,7 @@ import Filter from '../components/Filter'
 import MarketplaceItem from '../components/MarketplaceItem'
 import Pagination from '../components/Pagination'
 
-const Marketplace = (props) => (
+const Marketplace = props => (
   <Layout>
     <div className='BrowsePage'>
       <div className='BrowseSearchBar'>
@@ -16,7 +16,7 @@ const Marketplace = (props) => (
       <div className='KittiesGallery'>
         <div className='Container Container--lg'>
           <div className='KittiesGrid'>
-            <MarketplaceItem  />
+            <MarketplaceItem />
           </div>
         </div>
       </div>
