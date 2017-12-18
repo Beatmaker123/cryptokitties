@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Link from 'next/link'
 
 const Filter = () => (
   <Fragment>
@@ -14,10 +15,10 @@ const Filter = () => (
         </div>
         <div className='Filter-sortBy'>Sort by</div>
         <div className='Filter-tabs'>
-          <span className='Filter-tab Filter-tab--active'>For Sale</span>
-          <span className='Filter-tab'>Siring</span>
-          <span className='Filter-tab'>Gen 0</span>
-          <span className='Filter-tab'>All Kitties</span>
+          <Link href='./marketplace'><span className='Filter-tab Filter-tab--active'>For Sale</span></Link>
+          <Link href='./marketplace?title=Siring'><span className='Filter-tab'>{props.url.query.title}</span></Link>
+          <Link href='./marketplace?title=Gen-0'><span className='Filter-tab'>Gen 0</span></Link>
+          <Link href='./marketplace?title=all'><span className='Filter-tab'>All Kitties</span></Link>
         </div>
       </div>
     </div>
