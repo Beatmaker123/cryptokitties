@@ -67,7 +67,10 @@ const Layout = ({ children, isHomePage, url } = {}) => (
               </a>
             </Link>
             <Link href='/marketplace'>
-              <a className={`Header-navigation-item ${url.pathname === '/marketplace' ? 'Header-navigation-item--active' : ''}`} aria-current='true'>
+              <a
+                className={`Header-navigation-item ${url.pathname === '/marketplace' ? 'Header-navigation-item--active' : ''}`}
+                aria-current='true'
+              >
                 Marketplace
               </a>
             </Link>
@@ -101,13 +104,15 @@ const Layout = ({ children, isHomePage, url } = {}) => (
                 </a>
               </li>
               <li className='Footer-nav-item'>
-                <a
-                  className='Footer-nav-link Footer-nav-link--marketplace'
-                  aria-current='false'
-                  href='/marketplace'
-                >
-                  Marketplace
-                </a>
+                <Link href='/marketplace'>
+                  <a
+                    className='Footer-nav-link Footer-nav-link--marketplace'
+                    aria-current='false'
+                    href='/marketplace'
+                  >
+                    Marketplace
+                  </a>
+                </Link>
               </li>
               <li className='Footer-nav-item'>
                 <a
@@ -132,31 +137,35 @@ const Layout = ({ children, isHomePage, url } = {}) => (
           <div className='Footer-nav Footer-nav--secondary'>
             <ul className='Footer-nav-items'>
               <li className='Footer-nav-item'>
-                <a
-                  className='Footer-nav-link Footer-nav-link--about'
-                  aria-current='false'
-                  href='/about'
-                >
-                  About
-                </a>
+                <Link href='/about'>
+                  <a
+                    className='Footer-nav-link Footer-nav-link--about'
+                    aria-current='false'
+                    href='/about'
+                  >
+                    About
+                  </a>
+                </Link>
               </li>
               <li className='Footer-nav-item'>
-                <a
-                  className='Footer-nav-link Footer-nav-link--press'
-                  aria-current='false'
-                  href='/press'
-                >
-                  Press
-                </a>
+                <Link href='/press'>
+                  <a
+                    className='Footer-nav-link Footer-nav-link--press'
+                    aria-current='false'
+                  >
+                    Press
+                  </a>
+                </Link>
               </li>
               <li className='Footer-nav-item'>
-                <a
-                  className='Footer-nav-link Footer-nav-link--technical-details'
-                  aria-current='false'
-                  href='/Technical-details'
-                >
-                  Tech details
-                </a>
+                <Link as={'/technical-details'} href='/technicalDetails'>
+                  <a
+                    className='Footer-nav-link Footer-nav-link--technical-details'
+                    aria-current='false'
+                  >
+                    Tech details
+                  </a>
+                </Link>
               </li>
               <li className='Footer-nav-item'>
                 <a

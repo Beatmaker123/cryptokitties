@@ -26,7 +26,7 @@ const signIn = props => (
           <FaqGroup />
         </div>
         <div className='CtaFaq'>
-          <img src='images/kitty-confused.svg' />
+          <img src='../static/images/kitty-confused.svg' />
           <h1 className='CtaFaq-title'>Still confused?</h1>
           <a
             className='Button Button--larger Button--buy Button--cta'
