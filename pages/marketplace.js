@@ -5,7 +5,7 @@ import MarketplaceItem from '../components/MarketplaceItem'
 import Pagination from '../components/Pagination'
 
 const Marketplace = props => (
-  <Layout>
+  <Layout url={props.url}>
     <div className='BrowsePage'>
       <div className='BrowseSearchBar'>
         <BrowseSearchBar />

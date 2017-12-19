@@ -2355,7 +2355,7 @@ Licensed under MIT
 }
 
 .Faq--open .Faq-question {
-  background-image: url("/icons/minus.svg");
+  background-image: url("../icons/minus.svg");
   color: #0b0b0b;
 }
 

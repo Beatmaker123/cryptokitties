@@ -4,8 +4,8 @@ import ProfileBanner from '../components/ProfileBanner'
 import ProfileTitle from '../components/ProfileTitle'
 import ProfileCattributes from '../components/ProfileCattributes'
 
-const Profile = () => (
-  <Layout>
+const Profile = props => (
+  <Layout url={props.url}>
     <div className='KittyPage'>
       <div className='KittyBanner u-bg-alt-topaz'>
         <ProfileBanner />

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
-const Layout = ({ children, isHomePage } = {}) => (
+const Layout = ({ children, isHomePage, url } = {}) => (
   <Fragment>
     <Head>
       <meta charSet='UTF-8' />
@@ -24,15 +24,19 @@ const Layout = ({ children, isHomePage } = {}) => (
             <h1 className='Header-wordmark'>CryptoKitties</h1>
           </a>
           <nav className='Header-navigation'>
-            <a
-              className='Header-navigation-item'
-              aria-current='false'
-              href='/sign-in'
-            >
-              Sign in
-            </a>
-            <Link href='./marketplace'>
-              <a className='Header-navigation-item' aria-current='false'>
+            <Link href='/signIn'>
+              <a
+                className={`Header-navigation-item ${url.pathname === '/signIn' ? 'Header-navigation-item--active' : ''}`}
+                aria-current='false'
+              >
+                Sign in
+              </a>
+            </Link>
+            <Link href='/marketplace'>
+              <a
+                className={`Header-navigation-item ${url.pathname === '/marketplace' ? 'Header-navigation-item--active' : ''}`}
+                aria-current='false'
+              >
                 Marketplace
               </a>
             </Link>
@@ -54,19 +58,19 @@ const Layout = ({ children, isHomePage } = {}) => (
             {/* react-empty: 11 */}
           </div>
           <nav className='Header-navigation'>
-            <a
-              className='Header-navigation-item'
-              aria-current='false'
-              href='/sign-in'
-            >
-              Sign in
-            </a>
-            <a
-              className='Header-navigation-item Header-navigation-item--active'
-              aria-current='true'
-            >
-              Marketplace
-            </a>
+            <Link href='/signIn'>
+              <a
+                className={`Header-navigation-item ${url.pathname === '/signIn' ? 'Header-navigation-item--active' : ''}`}
+                aria-current='false'
+              >
+                Sign in
+              </a>
+            </Link>
+            <Link href='/marketplace'>
+              <a className={`Header-navigation-item ${url.pathname === '/marketplace' ? 'Header-navigation-item--active' : ''}`} aria-current='true'>
+                Marketplace
+              </a>
+            </Link>
           </nav>
         </div>
       </div>}

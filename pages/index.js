@@ -1,8 +1,8 @@
 // import Link from 'next/link'
 import Layout from '../components/Layout'
 
-const Index = () => (
-  <Layout isHomePage>
+const Index = props => (
+  <Layout isHomePage url={props.url}>
     <div className='Landing'>
       <div className='Landing-description'>
         <h1 className='Landing-headline'>Collectible.</h1>
