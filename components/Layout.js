@@ -124,13 +124,14 @@ const Layout = ({ children, isHomePage, url } = {}) => (
                 </a>
               </li>
               <li className='Footer-nav-item'>
-                <a
-                  className='Footer-nav-link Footer-nav-link--help'
-                  aria-current='false'
-                  href='/help'
-                >
-                  Help & Support
-                </a>
+                <Link href='/help'>
+                  <a
+                    className='Footer-nav-link Footer-nav-link--help'
+                    aria-current='false'
+                  >
+                    Help & Support
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>

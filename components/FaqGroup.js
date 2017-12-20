@@ -1,14 +1,14 @@
 import React from 'react'
 import Toggle from 'react-toggled'
 
-const Faq = ({ children, clickSelector = '.Faq-question' }) => (
+const Faq = ({ children }) => (
   <Toggle defaultOn={false}>
     {({ on, toggle }) => (
       <div
         className={`Faq ${on ? 'Faq Faq--open' : ''}`}
         role='button'
         id='What-do-I-need-to-play-CryptoKitties'
-        onClick={evt => evt.target.matches(clickSelector) && toggle()}
+        onClick={toggle}
       >
         {children}
       </div>
